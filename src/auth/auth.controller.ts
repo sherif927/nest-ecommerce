@@ -1,5 +1,5 @@
 import { Controller, Post, Body, UseGuards, Request } from '@nestjs/common';
-import { UserModel } from 'src/types/dto/user.dto';
+import { UserModel } from '../types/dto/user.dto';
 import { AuthGuard } from '@nestjs/passport';
 import { AuthService } from './services/auth.service';
 

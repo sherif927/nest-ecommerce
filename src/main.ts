@@ -10,7 +10,6 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
   app.useGlobalInterceptors(new LoggingInterceptor());
   app.useGlobalFilters(new HttpExceptionFilter());
-  app.enableCors({ origin: ['http://localhost:4200'] });
   await app.listen(3000);
   Logger.log(`Server running on http://localhost:${port}`, 'bootstrap');
 }

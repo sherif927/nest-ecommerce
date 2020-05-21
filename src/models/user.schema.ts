@@ -8,7 +8,6 @@ export const UserSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    select: false,
   },
   seller: {
     type: Boolean,

@@ -1,9 +1,8 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
 import { Model } from 'mongoose';
-import { User } from 'src/types/user';
+import { User } from '../../../types/user';
 import { InjectModel } from '@nestjs/mongoose';
-import { UserModel } from 'src/types/dto/user.dto';
-import { ModelSanatizer } from '../../utils/class.sanatizer';
+import { UserModel } from '../../../types/dto/user.dto';
 
 @Injectable()
 export class UserService {
