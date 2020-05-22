@@ -99,11 +99,11 @@ describe('AUTH', () => {
       });
   });
 
-  /* it('should respect seller token', () => {
+  it('should respect seller token', () => {
     return request(appUrl)
       .get('/product/mine')
       .set('Accept', 'application/json')
       .set('Authorization', `Bearer ${sellerToken}`)
       .expect(200);
-  }); */
+  });
 });
