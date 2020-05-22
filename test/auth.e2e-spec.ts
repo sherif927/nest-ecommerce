@@ -8,10 +8,8 @@ let appUrl = 'http://localhost:3000/api';
 let database = 'mongodb://localhost:27017/ecommerce';
 
 beforeAll(async () => {
-  await mongoose.connect(database);
-  mongoose.connection.db.collection('users',
-    async (error, collection: mongoose.Collection) => await collection.deleteMany({})
-  );
+  await mongoose.connect(database, { useUnifiedTopology: true, useNewUrlParser: true });
+  await mongoose.connection.db.dropDatabase();
 });
 
 afterAll(done => {
