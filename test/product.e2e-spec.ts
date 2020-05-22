@@ -24,8 +24,8 @@ beforeAll(async () => {
   sellerToken = token;
 });
 
-afterAll(async done => {
-  await mongoose.disconnect(done);
+afterAll(done => {
+  mongoose.disconnect(done);
 });
 
 describe('PRODUCT', () => {
