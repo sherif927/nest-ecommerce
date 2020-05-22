@@ -12,7 +12,7 @@ import { AuthService } from './services/auth.service';
     SharedModule,
     PassportModule,
     JwtModule.register({
-      secret: process.env.SECRET || 'qwerty123',
+      secret: process.env.SECRET,
       signOptions: { expiresIn: "10h" },
     })
   ],
