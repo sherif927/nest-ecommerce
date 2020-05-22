@@ -21,6 +21,4 @@ export class OrderController {
   createOrder(@Body() order: OrderModel, @AuthUser() user: User) {
     return this.orderService.placeOrder(order, user);
   }
-
-
 }
